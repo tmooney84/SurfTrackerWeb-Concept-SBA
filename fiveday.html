@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surf Tracker</title>
+<link rel="icon" type="image/x-icon" href="surf.JPG">
+<link rel="stylesheet" href="styles.css">
+<script src="signin.js" defer></script>
+<style>
+  td.highlight-bg {
+    background-color: #30b12b;
+    color: white;
+  }
+  .image-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px 0;
+  }
+  .image-container img {
+    width: 600px; /* Adjust the width as needed */
+    height: auto;
+  }
+  .topnav {
+  display: flex;
+  align-items: center;
+}
+
+.topnav .dropdown, .topnav a {
+  margin-right: 16px;
+}
+
+.topnav form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.topnav form label {
+  color: white;
+  margin-right: 8px;
+}
+
+.topnav form input[type="text"], 
+.topnav form input[type="password"] {
+  margin-right: 8px;
+}
+
+  table {
+    width: 100%;
+    table-layout: fixed; /* Ensures the table layout is fixed and cells have equal width */
+  }
+  td {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures overflow content is hidden */
+    text-overflow: ellipsis; /* Adds an ellipsis for overflow text */
+    padding: 8px; /* Adds padding inside cells */
+  }
+  th {
+    white-space: nowrap; /* Prevents text from wrapping in header cells */
+  }
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div class="dropdown">
+    <button class="dropbtn home">Breaks 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#ponto">Ponto (Carlsbad)</a>
+      <a href="#tamarack">Tamarack </a>
+      <a href="#oceanside">Oceanside </a>
+      <a href="#sano">San Onofre </a>
+      <a href="#lowers">Lower Trestles</a>
+      <a href="#uppers">Upper Trestles</a>
+      <a href="current.html">T-Street</a>
+      <a href="#doheny">Doheny</a>
+      <a href="#saltcreek">Salt Creek</a>
+      <a href="#newport">Newport Beach</a>
+      <a href="#huntington">Huntington Beach</a>
+      <a href="#seal-beach">Seal Beach Pier</a>
+    </div>
+  </div> 
+  <a class="current" href="current.html">Current</a>
+  <a class="hourly" href="hourly.html">Hourly</a>
+  <a class="forecast" href="fiveday.html">Five-Day Forecast</a>
+
+
+  <!-- Login Form -->
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+</div>
+<div style="padding: 24px; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center;">T-Street (San Clemente) Five-Day Forecast</h2>
+</div>
+<div style="padding: 16px; font-family: Arial, sans-serif;">
+  <div class="table-container" style="display: flex; justify-content: center;">
+    <table class="current-conditions" style="border-collapse: collapse; text-align: center;">
+        <tr style="font-weight: bold; background-color: #30b12b; color: white;">
+            <th>Day</th>
+            <th>Wave Height</th>
+            <th>Quality</th>
+            <th>Swell</th>
+        </tr>
+        <tr>
+            <td>Monday 9/2</td>
+            <td>3-4+</td>
+            <td>Good</td>
+            <td>1.1FT @ 15s SW 217º</td>
+        </tr>
+        <tr>
+            <td>Tuesday 9/3</td>
+            <td>2-3+</td>
+            <td>Fair to Good</td>
+            <td>1.2FT @ 15s SW 214º</td>
+        </tr>
+        <tr>
+            <td>Wednesday 9/4</td>
+            <td>2-3+</td>
+            <td>Fair</td>
+            <td>1.1FT @ 16s SW 214º</td>
+        </tr>
+        <tr>
+          <td>Thursday 9/5</td>
+          <td>2-3+</td>
+          <td>Fair to Good</td>
+          <td>1.1FT @ 15s SW 212º</td>
+      </tr>
+      <tr>
+          <td>Friday 9/6</td>
+          <td>2-3+</td>
+          <td>Fair to Good</td>
+          <td>1.0FT @ 14s SW 211º</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div style="padding: 16px; display: flex; justify-content: center;">
+  <div class="image-container">
+    <img src="tstreet.jfif" alt="T-Street Image">
+  </div>
+</div>
+
+</body>
+</html>
